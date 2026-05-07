@@ -1,0 +1,13 @@
+{
+  "entity_id": "EK-TECH-01",
+  "kavram": "Ergenekon Çıkış Algoritması",
+  "kaynak": "Ergenekon Destanı",
+  "analiz": {
+    "problem_tanimi": "Kapalı sistem darboğazı ve kaynak tükenmişliği.",
+    "teknik_cozum": "Demir dağın termal yöntemlerle eritilmesi.",
+    "paralel_islem": "70 körüğün eşzamanlı aktivasyonu.",
+    "navigasyon": "Bozkurt rehberliğinde rota optimizasyonu.",
+    "sistem_durumu": "Post-isolation scalability achievement."
+  },
+  "etiketler": ["Systems Engineering", "Mythology", "Optimization"]
+}

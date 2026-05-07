@@ -16,16 +16,23 @@ Yenilgi sonrası sığınılan vadi (Ergenekon), başlangıçta güvenli bir lim
 2.  **Enerji Yönetimi**: 70 yerden 70 körükle ateşin harlanması (Dağıtık enerji girişi).
 3.  **Faz Değişimi**: Katı olan dağın sıvıya/boşluğa dönüştürülmesi.
 
-## 🐺 Rehberlik: Çıkış Algoritması
+## 📉 Ölçeklenebilirlik (Scalability) ve Kaynak Yönetimi
 
-Dağ eriyip geçit açıldığında, sistemin dış dünyadaki koordinatlarını bilmemesi büyük bir risk oluşturur. İşte burada **Bozkurt** devreye girer:
-- **Navigasyon**: Kurt, en güvenli ve verimli rotayı bilir.
-- **Güven**: Halkın tanımadığı bir coğrafyada ilerlemesini sağlayan psikolojik çıpadır.
-- **Süreklilik**: Kurt, halkı kadim merkezi (Ötüken) ulaştırana kadar rehberliği bırakmaz.
+Ergenekon, sistem teorisi açısından "kapalı bir ekosistemin taşıma kapasitesine (carrying capacity) ulaşması" durumudur. Sistem, çöküşten kurtulmak için iki seçenekle karşı karşıyadır: ya nüfus kontrolü ile statik kalmak ya da sınırları (dağları) genişletmek/aşmak.
 
-## 🧬 Ontolojik Miras: Nevruz
+1.  **Dikey Ölçekleme (Vertical Scaling)**: Vadi içindeki kaynakların (tarım, hayvancılık) verimliliğini artırmak. Ancak bir noktada fiziksel sınırlar buna engel olur.
+2.  **Yatay Ölçekleme (Horizontal Scaling)**: Yeni alanlara (dış dünya) açılmak. Demir dağın eritilmesi, sistemin yatayda büyümesini engelleyen "hard-coded" bir engelin kaldırılmasıdır.
 
-Ergenekon'dan çıkış, Türk kültüründe 21 Mart (Nevruz) ile kutlanır. Bu tarih, sadece baharın gelişi değil, sistemin **REBOOT** edildiği, özgürlüğün ve egemenliğin yeniden tanımlandığı gündür.
+## ⚡ Enerji Yoğunluklu Çözüm: 70 Körük Algoritması
+
+Dağı eritmek için gereken ısı, tek bir noktadan veya rastgele bir yaklaşımla elde edilemezdi. Destanda geçen "70 yere 70 körük" ifadesi, **paralel işlemci (parallel processing)** mantığını simgeler:
+- **Eşzamanlılık (Concurrency)**: Tüm körüklerin aynı anda çalışması.
+- **Odaklanma**: Isının belirli bir noktada (zayıf damar) yoğunlaştırılması.
+- **Kolektif Çaba**: Sistemin tüm birimlerinin ortak bir amaç için senkronize olması.
+
+## 🧭 Navigasyon: Bozkurt'un Veri Akışı
+
+Kurt, Ergenekon'un sınırlarını aşan tek birimdir. Onun dış dünyadan getirdiği "bilgi", sistemin çıkış sonrası hayatta kalmasını sağlar. Kurt burada bir **Edge Gateway** görevi görür; dış dünyadaki veriyi (yollar, düşmanlar, kaynaklar) vadi içindeki izole topluluğa taşır.
 
 ---
 > *"Dağ delindi, yol göründü; Börü önümüze düştü. Artık dünya dardı, biz ise hür."*

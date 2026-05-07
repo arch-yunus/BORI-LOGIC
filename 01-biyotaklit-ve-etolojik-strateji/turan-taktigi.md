@@ -27,14 +27,27 @@ Turan Taktiği üç ana fazdan oluşur:
 *   **Fonksiyon**: Çatışma alanının bir "ölüm çemberine" dönüştürülmesi.
 *   **Sonuç**: Düşman, manevra kabiliyetini kaybeder ve lojistik üstünlüğün hiçbir önemi kalmaz.
 
-## 📊 Karşılaştırmalı Analiz
+## ⚙️ Sistem Mühendisliği Perspektifi: Dinamik Optimizasyon
 
-| Özellik | Kurt Sürüsü | Turan Taktiği |
-| :--- | :--- | :--- |
-| **İletişim** | Uluma (Sesli Veri) | Ok/Işık/Davul (Sinyalizasyon) |
-| **Roller** | Alfa/Beta/Omega | Öncü/Kanat/Artçı |
-| **Hız** | Yüksek Mobilite | Süvari Üstünlüğü |
-| **Hedef** | Avın Enerjisini Tüketme | Düşmanı Panik ve Çembere Alma |
+Turan Taktiği, modern kontrol sistemleri ve sürü robotiği (swarm robotics) prensipleriyle paralellik gösterir:
+
+1.  **Dinamik Geri Besleme (Feedback Loop)**: Sahte ricat sırasında merkezin geri çekilme hızı, düşmanın ilerleme hızıyla senkronize edilir. Eğer düşman yavaşlarsa, merkez birimler "yemleme" (baiting) yaparak etkileşimi sıcak tutar.
+2.  **Dağıtık Karar Alma**: Kanat birimleri (pusu grupları), merkezden bağımsız olarak kendi yerel verileriyle (düşmanın kanat boşluğu) hareket eder. Bu, merkezi komuta gecikmelerini minimize eder.
+3.  **Hata Toleransı**: Bir kanat başarısız olsa bile, hilalin diğer ucu savunma pozisyonuna geçerek sistemi koruma altına alabilir.
+
+## 📊 Derinlemesine Karşılaştırmalı Analiz
+
+| Parametre | Kurt Sürüsü (Biyolojik) | Turan Taktiği (Askeri) | Sistem Mühendisliği Karşılığı |
+| :--- | :--- | :--- | :--- |
+| **İletişim** | Uluma (Frekans Modülasyonu) | Islıklı Ok / Tuğ / Trampet | Veri İletim Protokolü |
+| **Hiyerarşi** | Alfa/Beta/Omega (Esnek) | Komuta Zinciri (Katı ama Mobil) | Master/Slave & P2P Hibrit |
+| **Manevra** | Çevreleme (Encirclement) | Hilal Formasyonu | Boundary Definition |
+| **Enerji** | Dayanıklılık (Stamina) Avı | Lojistik ve Süvari Hızı | Resource Optimization |
+| **Sensörler** | Koku ve İşitme | Keşif Erleri (Yelme) | Data Acquisition |
+
+## 🌲 Doğadan Savaş Alanına: Kurt vs. Süvari
+
+Kurtların kar fırtınasında veya yoğun ormanda birbirlerini kaybetmeden avı sürdürebilmeleri için geliştirdikleri "iz takibi" ve "sessiz koordinasyon", bozkır süvarilerinin toz bulutu içinde veya gece baskınlarında uyguladıkları disiplinin temelidir. Bozkır kültürü, kurdu sadece taklit etmemiş; onun **hayatta kalma algoritmasını** kendi DNA'sına kodlamıştır.
 
 ---
 > *"Kurt kışı geçirir ama yediği ayazı unutmaz. Bozkırın stratejisi ise asla değişmez: Gözlemle, sabret ve kuşat."*

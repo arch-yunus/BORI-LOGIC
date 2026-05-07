@@ -25,6 +25,7 @@ Bu proje, veriye dayalı bir analiz yaklaşımını benimser:
 1.  **Etolojik Analiz**: *Canis lupus* türünün sosyal hiyerarşisi, avlanma stratejileri ve enerji yönetimi incelenir.
 2.  **Mitolojik Tersine Mühendislik**: Destanlardaki "mucizevi" olaylar, stratejik ve lojistik karar alma süreçleri olarak yeniden yorumlanır (Örn: Ergenekon'un bir skalabilirlik problemi olarak ele alınması).
 3.  **Semiyotik Çözümleme**: Maddi kültür varlıklarının (tuğlar, sikkeler) taşıdığı sembolik mesajlar deşifre edilir.
+4.  **Algoritmik Simülasyon**: Teorik çıkarımlar, `ULUYI` dili ile modellenerek dijital bozkır ortamında test edilir.
 
 ---
 
@@ -68,7 +69,32 @@ graph TD
 ### 📂 [05. Kurt Dili (ULUYI) ve Simülasyon](05-kurt-dili-ve-simulasyon/)
 *   **ULUYI Scripting:** Kurt sürüsü davranışlarını tanımlayan egzotik dil.
 *   **Sürü Zekası Simülasyonu:** Kadim stratejilerin algoritmik temsili.
+*   **Hava Durumu ve Enerji:** Çevresel faktörlerin (kar, fırtına) sürü üzerindeki etkisi.
 *   **Interpreter:** .uluy dosyalarını işleyen düşük seviyeli motor.
+
+---
+
+## 🐺 ULUYI Dili ve Sözdizimi (Syntax)
+
+`ULUYI`, bozkır stratejilerini makine diline tercüme etmek için geliştirilmiş alan özgü bir dildir (DSL).
+
+### Temel Komutlar
+*   `AUUUUUU "[Başlık]"`: Simülasyon dosyasını başlatır/bitirir.
+*   `TÖRE [Parametre] [Değer]`: Sistem yapılandırmasını (Genişlik, Strateji, Hava Durumu) tanımlar.
+*   `BÖRÜ_SAYISI [n]`: Simülasyondaki aktif kurt birimi sayısı.
+*   `PUSU_KUR [Mesafe]`: Kurtların pusuya yatma yarıçapını belirler.
+*   `ULUMA "[Mesaj]"`: Simülasyon loglarına veri girişi yapar.
+
+### Örnek Betik
+```uluy
+AUUUUUU "Kış Operasyonu"
+TÖRE STRATEJİ TURAN
+TÖRE HAVA_DURUMU KAR
+BÖRÜ_SAYISI 5
+PUSU_KUR 4
+ULUMA "Hilal daralıyor, beyaz ölüm yaklaşıyor."
+AUUUUUU "Son Ulam"
+```
 
 ---
 
@@ -79,6 +105,8 @@ graph TD
 *   **Aşina (Asena)**: Göktürk hanedanının türediğine inanılan dişi kurt; soyun koruyucusu.
 *   **Kurt-Ata**: Kavimlerin koruyucu ve yaratıcı gücü olarak kurdu simgeleyen ontolojik terim.
 *   **Turan Taktiği**: Kurtların avlanma biçiminden ilham alan askeri "Hilal/Kuşatma" stratejisi.
+*   **Yelme**: Keşif ve yıpratma saldırıları yapan öncü kurt birimi/süvarisi.
+*   **Tüz**: Kadim töre ve sistem düzeni; denge hali.
 
 ---
 
@@ -124,10 +152,11 @@ Veri setlerimiz [JSON Schema](data/json/schema.json) standartlarına uygundur.
 ## 🚀 Yol Haritası (Roadmap)
 
 - [x] **Interactive Dashboard**: Veri havuzunu ve stratejileri görselleştiren web arayüzü.
-- [x] **ULUYI Language Evolution**: Enerji ve strateji (Turan) mantığı eklenen egzotik dil.
-- [x] **Simulation 2.0**: Gelişmiş ASCII simülasyonu ve stratejik avlanma.
-- [x] **Dataset Expansion**: Ergenekon ve Türeyiş destanlarının JSON entegrasyonu.
+- [x] **ULUYI Language Evolution**: Enerji, hava durumu ve pusu mantığı eklenen egzotik dil.
+- [x] **Simulation 2.0**: Gelişmiş ASCII simülasyonu ve stratejik avlanma (Windows/Linux uyumlu).
+- [x] **Dataset Expansion**: Ergenekon ve Türeyiş destanlarının teknik JSON entegrasyonu.
 - [ ] **Mobile App**: Arşiv verilerine erişim sağlayan mobil uygulama konsepti.
+- [ ] **Genetic Algorithm**: Sürü davranışlarının nesiller arası optimizasyonu.
 
 ---
 

@@ -1,32 +1,34 @@
-# 🐺 ULUYI - Bozkırın Kadim Algoritması
-# Bu dosya, sürü zekası simülasyonu için parametreleri tanımlar.
+# 🐺 ULUYI - Bozkırın Kadim Algoritması: Kış Operasyonu
+# Bu dosya, zorlu hava koşullarında Turan taktiğini simüle eder.
 
-AUUUUUU "Ergenekon'dan Çıkış Stratejisi"
+AUUUUUU "Buzlu Bozkırda Hilal"
 
 # TÖRE (Yapılandırma)
 TÖRE GENİŞLİK 80
 TÖRE YÜKSEKLİK 20
 TÖRE STRATEJİ TURAN
+TÖRE HAVA_DURUMU KAR
+TÖRE ENERJİ_SINIRI 15
 
 # VARLIKLAR
-BÖRÜ_SAYISI 5
-KOYUN_SAYISI 30
+BÖRÜ_SAYISI 6
+KOYUN_SAYISI 35
+
+# STRATEJİK PARAMETRELER
+PUSU_KUR 4
 
 # AKIŞ
-DÖNGÜ 300
+DÖNGÜ 500
 
 # KADİM SESLER
-ULUMA "Bozkırın sessizliği, fırtınanın habercisidir."
-ULUMA "Kurt, rüzgarı kokladı; pusu kuruldu."
-ULUMA "Hilal kapanıyor, kaçış yok!"
-ULUMA "Gök Tanrı'nın izniyle, av tamamlanacak."
+ULUMA "Kar yağıyor, izler siliniyor; ama koku hala taze."
+ULUMA "Börü, soğukta daha keskinleşir."
+ULUMA "Pusu noktaları belirlendi (P), saldırı bekleniyor."
+ULUMA "Hilal daralıyor, beyaz ölüm yaklaşıyor."
 
-# STRATEJİ DETAYLARI
-# 1. Kuşatma (Turan Taktiği): Sürüyü hilal şeklinde sar.
-# 2. Bölme: Sürüyü parçalara ayır ve kaosu yönet.
-# 3. Odaklanma: Hedeflenen koyunu (KYN) asla gözden kaçırma.
+# STRATEJİ NOTLARI
+# 1. HAVA_DURUMU KAR: Hareket hızı düşer, enerji yönetimi kritiktir.
+# 2. PUSU_KUR: Kurtlar (P) moduna geçerek hedefin yaklaşmasını bekler.
+# 3. ENERJİ_SINIRI: Bitkin düşen kurtlar sürüden ayrılır.
 
-AUUUUUU "Son Ulam"
-# Börü, töresini korur.
-# Bozkır, Börü'yü saklar.
-# Gökbörü, yolu gösterir.
+AUUUUUU "Bozkırın Kanunu"

@@ -16,7 +16,10 @@ class UluyiInterpreter:
             "sheep_count": 10,
             "iterations": 50,
             "speed": 1.0,
-            "strategy": "standart"
+            "strategy": "standart",
+            "weather": "acik",
+            "energy_limit": 10,
+            "ambush_range": 5
         }
         self.logs = []
 
@@ -48,6 +51,8 @@ class UluyiInterpreter:
                     if key == "GENİŞLİK": self.config["width"] = int(val)
                     elif key == "YÜKSEKLİK": self.config["height"] = int(val)
                     elif key == "STRATEJİ": self.config["strategy"] = val.lower()
+                    elif key == "HAVA_DURUMU": self.config["weather"] = val.lower()
+                    elif key == "ENERJİ_SINIRI": self.config["energy_limit"] = int(val)
 
             # BÖRÜ_SAYISI [Int]
             elif line.startswith("BÖRÜ_SAYISI"):
@@ -66,6 +71,12 @@ class UluyiInterpreter:
                 parts = line.split()
                 if len(parts) >= 2:
                     self.config["iterations"] = int(parts[1])
+
+            # PUSU_KUR [Range]
+            elif line.startswith("PUSU_KUR"):
+                parts = line.split()
+                if len(parts) >= 2:
+                    self.config["ambush_range"] = int(parts[1])
 
             # ULUMA [Message]
             elif line.startswith("ULUMA"):

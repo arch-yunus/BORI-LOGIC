@@ -1,0 +1,20 @@
+{
+  "entity_id": "ST-001",
+  "kavram": "Turan Taktiği",
+  "kategori": "Askeri Algoritma",
+  "asama_1": {
+    "isim": "Sahte Ricat (Baiting)",
+    "fonksiyon": "Düşman hattını esnetme ve merkeze çekme.",
+    "parametreler": ["Hız", "Mesafe Kontrolü"]
+  },
+  "asama_2": {
+    "isim": "Kuşatma (Envelopment)",
+    "fonksiyon": "Kanat birimlerinin (kurt pençeleri) hilal şeklinde yayılması.",
+    "parametreler": ["Senkronizasyon", "Gizlilik"]
+  },
+  "asama_3": {
+    "isim": "İmha (Strike)",
+    "fonksiyon": "Çemberin daraltılması ve avın manevra kabiliyetinin sıfırlanması.",
+    "parametreler": ["Odaklanmış Güç", "Moral Baskı"]
+  }
+}

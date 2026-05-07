@@ -17,8 +17,8 @@
         <ul class="nav-links">
             <li><a href="#home">Ana Sayfa</a></li>
             <li><a href="#lore">Mitoloji</a></li>
+            <li><a href="#simulator">Simülatör</a></li>
             <li><a href="#strategies">Stratejiler</a></li>
-            <li><a href="#about">Hakkında</a></li>
         </ul>
     </nav>
 
@@ -26,9 +26,9 @@
         <div class="hero-content">
             <h1 class="fade-in">Kurt İzinde Kadim Bilgelik</h1>
             <p class="tagline">Biyotaklit, Hareket Felsefesi ve Türk Mitolojisi Arşivi</p>
-            <div class="hero-btns">
+            <div class="hero-btns fade-in">
                 <a href="#lore" class="btn primary">Keşfetmeye Başla</a>
-                <a href="#strategies" class="btn secondary">Sürü Zekası</a>
+                <a href="#simulator" class="btn secondary">Sürü Zekası</a>
             </div>
         </div>
     </header>
@@ -40,31 +40,42 @@
                 <p>Destanlardan süzülen ontolojik ve stratejik veriler.</p>
             </div>
             <div id="lore-container" class="grid-container">
-                <!-- JSON data will be injected here -->
                 <div class="loader">Yükleniyor...</div>
             </div>
         </section>
 
-        <section id="strategies" class="section alternate">
+        <section id="simulator" class="section alternate">
+            <div class="section-header">
+                <h2>Kadim Strateji Simülatörü</h2>
+                <p>ULUYI motorundan gelen canlı veri akışı (Mockup).</p>
+            </div>
+            <div class="terminal-container" id="terminal">
+                <div class="terminal-line"><span class="time">[08:00:00]</span><span class="prefix">SYSTEM</span><span class="msg">ULUYI Interpreter v2.0 başlatıldı...</span></div>
+                <div class="terminal-line"><span class="time">[08:00:01]</span><span class="prefix">SYSTEM</span><span class="msg">kadim_strateji.uluy yükleniyor...</span></div>
+                <!-- Loglar JS ile eklenecek -->
+            </div>
+        </section>
+
+        <section id="strategies" class="section">
             <div class="section-header">
                 <h2>Sürü Stratejileri</h2>
                 <p>Uygulanan algoritmalar ve askeri taktikler.</p>
             </div>
-            <div class="strategy-cards">
-                <div class="card glass">
+            <div class="strategy-cards grid-container">
+                <div class="card">
                     <div class="card-icon">🏹</div>
                     <h3>Turan Taktiği</h3>
-                    <p>Kurtların çevreleme hareketinden ilham alan, asimetrik bir kuşatma algoritması.</p>
+                    <p>Kurtların çevreleme hareketinden ilham alan, asimetrik bir kuşatma algoritması. Hilal kapanırken düşman manevra alanını kaybeder.</p>
                 </div>
-                <div class="card glass">
+                <div class="card">
                     <div class="card-icon">📡</div>
                     <h3>Dağıtık İletişim</h3>
-                    <p>Uluma protokolleri ile veri iletimi ve sürü koordinasyonu.</p>
+                    <p>Uluma protokolleri ile veri iletimi. Sürü içindeki Alfa ve Beta birimleri arasında kesintisiz koordinasyon sağlar.</p>
                 </div>
-                <div class="card glass">
-                    <div class="card-icon">⚡</div>
-                    <h3>Vur-Kaç (Ricat)</h3>
-                    <p>Düşman hattını esneten ve pusuya çeken dinamik hareket felsefesi.</p>
+                <div class="card">
+                    <div class="card-icon">❄️</div>
+                    <h3>Kış Operasyonu</h3>
+                    <p>Düşük hava sıcaklıklarında enerji optimizasyonu. Karlı zeminlerde avın izini sürme ve pusu (Ambush) mekanikleri.</p>
                 </div>
             </div>
         </section>
@@ -72,6 +83,7 @@
 
     <footer>
         <p>&copy; 2026 Bozkurt Mitolojisi Projesi. "Böri tegi erdemlik."</p>
+        <p style="font-size: 0.8rem; margin-top: 10px; color: #555;">v1.6.0-alpha | Comprehensive Update</p>
     </footer>
 
     <script src="app.js"></script>
