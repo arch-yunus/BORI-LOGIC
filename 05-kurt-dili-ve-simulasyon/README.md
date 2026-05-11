@@ -1,6 +1,6 @@
-# 🐺 AŞİNA Motoru ve Sürü Simülasyonu (v2.1)
+# 🐺 BÖRI-LOGIC: Sürü Simülasyonu ve Stratejik Motor (v2.5)
 
-Bu dizin, Bozkurt Mitolojisi projesinin algoritmik kalbidir. AŞİNA 2.1 sürümü ile stratejik derinlik artırılmış; formasyonlar, arazi etkileri ve birim rolleri sisteme entegre edilmiştir.
+Bu dizin, **BÖRI-LOGIC** ekosisteminin algoritmik kalbidir. AŞİNA DSL aracılığıyla bozkır stratejilerini dijital bir nizam ile simüle eder.
 
 ## 🛠️ Bileşenler
 

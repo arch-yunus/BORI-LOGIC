@@ -1,6 +1,6 @@
-# 🐺 Bozkurt Mitolojisi: Biyotaklit, Sibernetik Töre ve Özgün Teknoloji Manifestosu
+# 🐺 BÖRI-LOGIC: Biyotaklit, Sibernetik Töre ve Özgün Teknoloji Manifestosu
 
-![Bozkurt Mitolojisi Banner](assets/banner.png)
+![BÖRI-LOGIC Banner](assets/banner.png)
 
 [![Lisans: CC BY-NC-SA 4.0](https://img.shields.io/badge/Lisans-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![Kapsam: Antropoloji, Sibernetik & Medeniyet](https://img.shields.io/badge/Kapsam-Antropoloji%2C%20Sibernetik%20%26%20Medeniyet-blue.svg)]()
@@ -11,11 +11,11 @@
 
 ---
 
-## 👁️ Vizyon: Dijital Bozkır ve Sibernetik Töre
+## 👁️ Vizyon: BÖRI-LOGIC ve Dijital Bozkır
 
-Bu proje, Orta Asya bozkır kültürünün ontolojik özü olan **Kurt (Böri / Aşina)** figürünü; basit bir mitolojik unsurun ötesinde, bir **Medeniyet İşletim Sistemi (Civilizational OS)** prototipi olarak ele alır. 
+Bu proje, Orta Asya bozkır kültürünün ontolojik özü olan **Kurt (Böri / Aşina)** figürünü; basit bir mitolojik unsurun ötesinde, **BÖRI-LOGIC** adı altında bir **Medeniyet İşletim Sistemi (Civilizational OS)** prototipi olarak ele alır. 
 
-Mevcut teknolojik dünya düzeni, büyük ölçüde Avrupa-merkezli (Western-centric) bir epistemolojinin ve "merkezi kontrol" odaklı bir mantığın ürünüdür. Bizim vizyonumuz; teknolojiyi Batılı metaforlardan kurtarıp, onu bozkırın kadim, dağıtık ve otonom zekasıyla (Sibernetik Töre) yeniden inşa etmektir.
+**BÖRI-LOGIC**, Avrupa-merkezli (Western-centric) teknoloji paradigmasına karşı geliştirilmiş bir **"Teknolojik Egemenlik"** önerisidir. Hedefimiz; teknolojiyi sadece tüketmek değil, onu kendi kültürümüzden, tarihimizden ve kadim bozkır mantığımızdan süzülen bir bakış açısıyla yeniden üretmektir.
 
 ---
 
