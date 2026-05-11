@@ -4,28 +4,26 @@
 
 [![Lisans: CC BY-NC-SA 4.0](https://img.shields.io/badge/Lisans-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![Kapsam: Antropoloji, Etoloji & Sistemler](https://img.shields.io/badge/Kapsam-Antropoloji%2C%20Etoloji%20%26%20Sistemler-blue.svg)]()
-[![Versiyon: 1.6.0-alpha](https://img.shields.io/badge/Versiyon-1.6.0--alpha-brightgreen.svg)]()
-[![Status: Comprehensive Update](https://img.shields.io/badge/Status-Comprehensive%20Update-blue.svg)]()
+[![Versiyon: 2.1.0-alpha](https://img.shields.io/badge/Versiyon-2.1.0--alpha-brightgreen.svg)]()
+[![Status: Scholarly Monolith](https://img.shields.io/badge/Status-Scholarly%20Monolith-blue.svg)]()
 
 > *"Yukarıda mavi gök, aşağıda yağız yer yaratıldığında, ikisinin arasında insan oğlu yaratılmış... O zamanlar Tanrı güç verdiği için, babam kağanın ordusu kurt gibi imiş, düşmanları koyun gibi imiş."* – *Orhun Yazıtları (Kül Tigin Anıtı)*
 
-Bu arşiv; Orta Asya bozkır kültürünün temel taşı olan **Kurt (Böri / Aşina)** figürünü, antropolojik bir mit olmanın ötesinde, erken dönem bir **biyotaklit (biomimicry)**, sistem modellemesi ve epik gelenek vakası olarak incelemeye adanmış disiplinlerarası bir referans kütüphanesidir.
+## 👁️ Giriş: Bozkırın Ontolojik Devinimi
+
+Bu arşiv; Orta Asya bozkır kültürünün ontolojik temeli olan **Kurt (Böri / Aşina)** figürünü, basit bir mitolojik unsurun ötesinde, erken dönem bir **biyotaklit (biomimicry)**, sistem modellemesi ve asimetrik harp stratejisi vakası olarak inceleyen disiplinlerarası bir referans kütüphanesidir.
+
+Bozkırın zorlu coğrafyası, hayatta kalmayı mutlak bir adaptasyon yeteneğine bağlamıştır. Kadim Türkler, *Canis lupus* türünün sosyal hiyerarşisini, avlanma disiplinini ve çevreyle olan enerji alışverişini gözlemleyerek; bu gözlemleri kendi askeri, sosyolojik ve idari yapılarının çekirdeğine yerleştirmişlerdir. Bu proje, söz konusu tarihsel mirası modern veri bilimi ve simülasyon teknikleriyle yeniden anlamlandırmayı hedefler.
 
 ---
 
-## 👁️ Manifesto: Gözlem, Taklit ve Epik Süreklilik
+## 🔬 Etolojik Temeller ve Biyotaklit (Biomimicry)
 
-Bozkurt, göçebe bozkır medeniyetlerinde romantik bir efsaneden ziyade, uzun süreli ampirik gözlemlerin sonucunda elde edilmiş kusursuz bir optimizasyon modelidir. Kadim Türkler, zorlu coğrafi koşullarda hayatta kalabilmek için kurdun doğasını izlemiş, analiz etmiş ve onun davranışsal algoritmalarını kendi sosyolojik, askeri ve iletişim ağlarına entegre etmiştir.
+Kurt, bozkır medeniyetleri için romantik bir sembolden ziyade, ampirik bir optimizasyon modelidir.
 
----
-
-## 🔬 Araştırma Metodolojisi
-
-Bu proje, veriye dayalı bir analiz yaklaşımını benimser:
-1.  **Etolojik Analiz**: *Canis lupus* türünün sosyal hiyerarşisi, avlanma stratejileri ve enerji yönetimi incelenir.
-2.  **Mitolojik Tersine Mühendislik**: Destanlardaki "mucizevi" olaylar, stratejik ve lojistik karar alma süreçleri olarak yeniden yorumlanır (Örn: Ergenekon'un bir skalabilirlik problemi olarak ele alınması).
-3.  **Semiyotik Çözümleme**: Maddi kültür varlıklarının (tuğlar, sikkeler) taşıdığı sembolik mesajlar deşifre edilir.
-4.  **Algoritmik Simülasyon**: Teorik çıkarımlar, `ULUYI` dili ile modellenerek dijital bozkır ortamında test edilir.
+1.  **Sürü Zekası (Swarm AI)**: Kurtların dağıtık iletişim ağı, merkezi olmayan liderlik (Alfa-Beta hiyerarşisi) ve eşzamanlı manevra kabiliyeti, Türk ordu teşkilatının temeli olan "Tümen" yapısını ve dağıtık haberleşme ağlarını beslemiştir.
+2.  **Enerji Optimizasyonu**: Kurtlar, avlarını takip ederken minimum enerjiyle maksimum verim almayı hedefler. Bozkır göçebeliğindeki "sürekli devinim" ve "lojistik hafiflik" bu modelden tevarüs etmiştir.
+3.  **Asimetrik Harp (Turan Taktiği)**: Kurtların avı kuşatıp, sahte bir geri çekilmeyle pusuya çekme davranışı, tarihin en etkili askeri manevralarından biri olan Hilal Taktiği'ne (Wolf Trap) ilham vermiştir.
 
 ---
 
@@ -37,143 +35,118 @@ graph TD
     Root --> Dir2[02. Dede Korkut ve Epik]
     Root --> Dir3[03. Türeyiş ve Ontoloji]
     Root --> Dir4[04. Semiyoloji ve İkonografi]
+    Root --> Dir5[05. AŞİNA DSL & Simülasyon]
     Root --> Data[data/json/lore]
     
-    Dir1 --> Sub1[Turan Taktiği & Sürü Zekası]
-    Dir2 --> Sub2[Mübarek Yüz & Sadakat]
-    Dir3 --> Sub3[Aşina Boyu & Ergenekon]
+    Dir1 --> Sub1[Turan Taktiği Mekaniği]
+    Dir2 --> Sub2[Kurtla Söyleşme & Sadakat]
+    Dir3 --> Sub3[Aşina Soyu & Ergenekon]
     Dir4 --> Sub4[Tuğlar & Petroglifler]
+    Dir5 --> Sub5[Stratejik Modelleme]
 ```
 
-### 📂 [01. Biyotaklit ve Etolojik Strateji](01-biyotaklit-ve-etolojik-strateji/)
-*   **Sürekli Devinim:** Nomadizm ve optimizasyon.
-*   **Sürü Zekası:** Dağıtık iletişim ağları.
-*   **Asimetrik Harp:** Turan Taktiği mekaniği.
-*   **İletişim Protokolleri:** Uluma algoritmaları ve veri iletimi.
+---
 
-### 📂 [02. Dede Korkut Anlatıları ve Epik Gelenek](02-dede-korkut-anlatilari/)
-*   **Kurt Yüzü Mübarektir:** Ontolojik kökenler.
-*   **Kurtla Söyleşme:** Salur Kazan'ın doğayla kurduğu derin bağ.
-*   **Toplumsal Hafıza:** Şamanik mirasın edebi dönüşümü.
+## 📂 Bölüm Detayları
 
-### 📂 [03. Türeyiş ve Ontoloji](03-tureyis-ve-ontoloji/)
-*   **Aşina Boyu:** Göktürk hanedanının genetik ve mitolojik kökleri.
-*   **Ergenekon:** Bir topluluğun yeniden doğuş algoritması.
-*   **Gökbörü:** Oğuz Kağan'ın ilahi ve stratejik rehberi.
+### 🛡️ [01. Biyotaklit ve Etolojik Strateji](01-biyotaklit-ve-etolojik-strateji/)
+*   **Sürekli Devinim:** Nomadizm ve sistem optimizasyonu.
+*   **Sürü Zekası:** Dağıtık iletişim ağları ve hiyerarşik esneklik.
+*   **Asimetrik Harp:** Turan Taktiği'nin etolojik kökenleri ve mekaniği.
 
-### 📂 [04. Semiyoloji ve İkonografi](04-semiyoloji-ve-ikonografi/)
-*   **Altın Kurt Başlı Tuğlar:** Devlet otoritesinin görsel dili.
-*   **Nümismatik:** Para ve mühürlerde kurdun sürekliliği.
-*   **Petroglifler:** Avrasya steplerindeki görsel hafıza.
+### 📜 [02. Dede Korkut Anlatıları ve Epik Gelenek](02-dede-korkut-anlatilari/)
+*   **Kurt Yüzü Mübarektir:** Kurdun kutsallığının ontolojik analizi.
+*   **Doğa-İnsan Simbiyozu:** Salur Kazan'ın kurtla söyleşmesi ve epik bağ.
+*   **Toplumsal Hafıza:** Şamanik mirasın edebi metinlerdeki iz düşümleri.
 
-### 📂 [05. Kurt Soyu (AŞİNA) ve Simülasyon](05-kurt-dili-ve-simulasyon/)
-*   **AŞİNA Scripting:** Kurt sürüsü davranışlarını tanımlayan profesyonel strateji dili.
-*   **Sürü Zekası Simülasyonu:** Kadim stratejilerin algoritmik temsili.
-*   **Hava Durumu ve Enerji:** Çevresel faktörlerin (kar, fırtına) sürü üzerindeki etkisi.
-*   **Interpreter:** .asina dosyalarını işleyen profesyonel DSL motoru.
+### 🧬 [03. Türeyiş ve Ontoloji](03-tureyis-ve-ontoloji/)
+*   **Aşina (Ašina) Boyu:** Göktürk hanedanının ilahi kurt soyuna dayanan meşruiyet zemini.
+*   **Ergenekon Algoritması:** Bir topluluğun yok oluştan yeniden doğuşuna (scalability) giden lojistik süreç.
+*   **Gökbörü Rehberliği:** Oğuz Kağan Destanı'nda navigasyonel bir unsur olarak "Işık ve Kurt".
+
+### 🖼️ [04. Semiyoloji ve İkonografi](04-semiyoloji-ve-ikonografi/)
+*   **Altın Kurt Başlı Tuğlar:** Bağımsızlık ve devlet otoritesinin semiyotik dili.
+*   **Nümismatik ve Petroglifler:** Maddi kültür varlıklarındaki görsel süreklilik.
 
 ---
 
 ## 🐺 AŞİNA Dili ve Sözdizimi (Syntax) 2.1
 
-`AŞİNA`, bozkır stratejilerini profesyonel bir nizam ile dijital ortama aktaran alan özgü bir dildir (DSL).
+`AŞİNA`, bozkır stratejilerini profesyonel bir nizam ile dijital ortama aktaran, alan özgü bir dildir (DSL).
 
-### Temel Komutlar
-*   `SÜRÜ "[Başlık]"`: Simülasyon dosyasını başlatır.
-*   `NİZAM [Param] [Değer]`: Sistem yapılandırmasını (GENİŞLİK, STRATEJİ, HAVA_DURUMU) tanımlar.
-*   `DİZİLİŞ [Tip]`: Sürü formasyonunu belirler (`HİLAL`, `KISKAC`, `KAMA`).
-*   `ZEMİN [Tip]`: Arazi tipini belirler (`BOZKIR`, `ORMAN`, `DAG`).
-*   `ROL [ID] [Tip]`: Belirli kurtlara özel roller atar (`ALFA`, `ÖNCÜ`, `PUSUCU`).
-*   `BÖRÜ [n]`: Simülasyondaki aktif kurt (börü) sayısı.
-*   `AV [n]`: Simülasyondaki hedef (av) sayısı.
-*   `PUSU [Mesafe]`: Pusu yarıçapını belirler.
-*   `ÇAĞRI "[Mesaj]"`: Log girişi yapar.
-*   `SON`: Dosyayı sonlandırır.
+### Temel Komut Seti
 
-### Örnek Betik (v2.1)
+| Komut | Açıklama | Parametreler |
+| :--- | :--- | :--- |
+| `SÜRÜ` | Simülasyon bloğunu başlatır. | `"[Başlık]"` |
+| `NİZAM` | Sistem yapılandırmasını tanımlar. | `GENİŞLİK`, `STRATEJİ`, `HAVA_DURUMU` |
+| `DİZİLİŞ` | Sürü formasyonunu belirler. | `HİLAL`, `KISKAC`, `KAMA` |
+| `ZEMİN` | Arazi tipini ve hız çarpanını belirler. | `BOZKIR`, `ORMAN`, `DAG` |
+| `ROL` | Birimlere özel yetkinlik atar. | `[ID] [ALFA / ÖNCÜ / PUSUCU]` |
+| `BÖRÜ` | Aktif kurt birimi sayısı. | `[n]` |
+| `AV` | Hedef (prey) birimi sayısı. | `[n]` |
+| `PUSU` | Pusuda bekleme yarıçapı. | `[Mesafe]` |
+| `ÇAĞRI` | Log ve iletişim verisi. | `"[Mesaj]"` |
+| `SON` | Betik dosyasını sonlandırır. | - |
+
+### Stratejik Senaryo Örneği (v2.1)
 ```uluy
-SÜRÜ "Gece Baskını"
+SÜRÜ "Karanlık Ormanda Kıskaç Harekatı"
+
 NİZAM STRATEJİ KISKAC
 ZEMİN ORMAN
-BÖRÜ 8
-AV 30
+NİZAM HAVA_DURUMU ACIK
+
+BÖRÜ 10
+AV 40
+
+# Roller ve Liderlik
 ROL 0 ALFA
+ROL 1 ÖNCÜ
+ROL 2 ÖNCÜ
+
 PUSU 6
-ÇAĞRI "Ay doğdu, kıskaç daralıyor."
+MÜDDET 500
+
+ÇAĞRI "Ay doğdu, kurtlar pusuda. Kıskaç nizamına geçiliyor."
 SON
 ```
 
 ---
 
+## ⚙️ Simülasyon Mekanikleri ve Karar Destek
+
+AŞİNA motoru, aşağıdaki dinamik değişkenleri işleyerek stratejik çıktılar üretir:
+
+*   **Hava Durumu Modeli**: `KAR` ve `FIRTINA` durumlarında hareket hızı düşer, enerji tüketimi artar.
+*   **Arazi (Zemin) Etkisi**: `DAG` arazisinde dikey engel çarpanı devreye girer. `ORMAN` arazisi `PUSU` başarısını artırırken görüşü kısıtlar.
+*   **Enerji Yönetimi**: Hareket eden her birim enerji kaybeder. `AV` başarılı olduğunda `BÖRÜ` birimleri enerji tazeler. Enerjisi biten birim sürüden ayrılır (terminasyon).
+
+---
+
 ## 📖 Börülük Sözlüğü (Glossary)
 
-*   **Böri / Börü**: Eski Türkçede "kurt". Aynı zamanda Göktürklerde hanedan muhafızlarına verilen isim.
-*   **Gökbörü (Kök-Börü)**: Gök rengi/yeleli kutsal kurt. İlahi rehberliği temsil eder.
-*   **Aşina (Asena)**: Göktürk hanedanının türediğine inanılan dişi kurt; soyun koruyucusu.
-*   **Kurt-Ata**: Kavimlerin koruyucu ve yaratıcı gücü olarak kurdu simgeleyen ontolojik terim.
-*   **Turan Taktiği**: Kurtların avlanma biçiminden ilham alan askeri "Hilal/Kuşatma" stratejisi.
-*   **Yelme**: Keşif ve yıpratma saldırıları yapan öncü kurt birimi/süvarisi.
-*   **Tüz**: Kadim töre ve sistem düzeni; denge hali.
-
----
-
-## 🖼️ Görsel Galeri ve Belgeleme
-
-### Gökbörü Rehberliği (Destan Tasviri)
-![Gökbörü](assets/oguz_kagan_wolf.png)
-*Oğuz Kağan'ın otağına giren ilahi ışığın içinden çıkan rehber kurt tasviri.*
-
-### Stratejik Modelleme
-```mermaid
-graph LR
-    A[Gözlem: Kurt] --> B[Analiz: Sürü Zekası]
-    B --> C[Uygulama: Askeri Disiplin]
-    C --> D[Sonuç: Devlet Teşkilatlanması]
-```
-
----
-
-## ⚙️ Geliştiriciler İçin: Data API
-
-Veri setlerimiz [JSON Schema](data/json/schema.json) standartlarına uygundur.
-
-```json
-{
-  "entity_id": "OK-001",
-  "kavram": "Gökbörü",
-  "kaynak": "Oğuz Kağan Destanı",
-  "analiz": "Işık içerisinden çıkan ilahi rehber."
-}
-```
-
----
-
-## ✨ Vecizeler ve Atasözleri
-
-> *"Kurt kışı geçirir ama yediği ayazı unutmaz."* – Türk Atasözü
-
-> *"Kurt, yalnız olduğu için mi ulur? Yoksa uluduğu için mi yalnızdır?"* – Ahmet Hamdi Tanpınar
+*   **Aşina (Ašina)**: Göktürk hanedanının efsanevi kurt soyu.
+*   **Gökbörü**: İlahi ve stratejik rehber kurt.
+*   **Turan Taktiği**: Kuşatma ve sahte geri çekilme algoritması.
+*   **Yelme**: Keşif ve yıpratma saldırıları yapan öncü kurt birimi.
+*   **Tüz**: Evrensel denge, nizam ve kadim töre.
 
 ---
 
 ## 🚀 Yol Haritası (Roadmap)
 
-- [x] **Interactive Dashboard**: Veri havuzunu ve stratejileri görselleştiren web arayüzü.
-- [x] **AŞİNA Language Evolution**: Enerji, hava durumu ve pusu mantığı eklenen profesyonel dil.
-- [x] **Simulation 2.0**: Gelişmiş ASCII simülasyonu ve stratejik avlanma (Windows/Linux uyumlu).
-- [x] **Dataset Expansion**: Ergenekon ve Türeyiş destanlarının teknik JSON entegrasyonu.
-- [ ] **Mobile App**: Arşiv verilerine erişim sağlayan mobil uygulama konsepti.
-- [ ] **Genetic Algorithm**: Sürü davranışlarının nesiller arası optimizasyonu.
+- [x] **AŞİNA v2.1 Engine**: Formasyon ve rol tabanlı strateji motoru.
+*   [x] **Advanced ASCII Rendering**: Dinamik arazi ve birim görselleştirmesi.
+- [x] **Lore Integration**: JSON tabanlı destan verilerinin simülasyonla eşleşmesi.
+*   [ ] **Genetic Optimization**: Nesiller arası başarılı stratejilerin evrimi.
+- [ ] **Interactive Web Dashboard**: Canlı AŞİNA betik editörü ve simülatörü.
 
 ---
 
-## 📄 Lisans Bildirimi
+## 📄 Lisans ve Katkıda Bulunma
 
-Bu arşiv **CC BY-NC-SA 4.0** lisansı ile korunmaktadır.
+Bu proje **CC BY-NC-SA 4.0** lisansı altındadır. Akademik çalışmalar için kaynak gösterilmesi zorunludur.
 
-<br>
-<p align="center">
-  <b>"Böri tegi erdemlik"</b><br>
-  <i>(Kurt gibi erdemli / otonom ve kararlı)</i><br>
-  Hareket et, gözlemle ve sistemi yönet.
-</p>
+**"Böri tegi erdemlik"**
+*(Kurt gibi erdemli, otonom ve kararlı)*
