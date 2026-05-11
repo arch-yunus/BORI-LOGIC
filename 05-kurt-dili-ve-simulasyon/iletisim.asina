@@ -1,0 +1,21 @@
+# 🐺 ULUYI 2.0 - Sürü İletişimi ve Protokoller
+# Kadim ses dalgaları analizi ve operasyonel çağrılar.
+
+SÜRÜ "İletişim Katmanı"
+
+# BÖRÜ ÇAĞRILARI
+ÇAĞRI "Sürü toplandı."
+ÇAĞRI "Ay doğdu, zaman geldi."
+ÇAĞRI "Düşman yakında, sessiz ol."
+
+# PROTOKOLLER
+# 1. Uzun Çağrı: Uzak mesafe veri iletimi.
+# 2. Kısa Çağrı: Yakın mesafe taktiksel emir.
+# 3. Uyarı: Tehdit algılama.
+
+# SİSTEM DURUMU (Bilgi)
+ÇAĞRI "Sistem Aktif"
+ÇAĞRI "Güç Maksimum"
+
+SON
+# Kod biter, nizam bitmez.

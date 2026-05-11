@@ -2,28 +2,28 @@ document.addEventListener('DOMContentLoaded', () => {
     // Lore Data Management
     const loreData = [
         {
-            "kavram": "Gökbörü",
-            "kaynak": "Oğuz Kağan Destanı",
-            "analiz": "Işık içerisinden çıkan ilahi rehber. Stratejik keşif ve ordu yönetiminde navigasyonel bir veri kaynağı.",
-            "kategori": "Navigasyon ve Rehberlik"
+            "kavram": "Aşina (Ašina) Soyu",
+            "kaynak": "Göktürk Kitabeleri",
+            "analiz": "Göktürk Devleti'nin kurucu hanedanı. İlahi kurt soyundan geldiklerine inanılır. Sosyopolitik bir 'merkezi liderlik' algoritması.",
+            "kategori": "Ontoloji ve Liderlik"
         },
         {
-            "kavram": "Ergenekon Bozkurtu",
-            "kaynak": "Ergenekon Destanı",
-            "analiz": "Sıkışmış bir toplumu özgürlüğe taşıyan çıkış algoritması. Demir dağın eritilmesinin ardından beliren rehber.",
-            "kategori": "Kurtarıcı ve Yol Gösterici"
-        },
-        {
-            "kavram": "Türeyiş Kurdu",
-            "kaynak": "Türeyiş Destanı",
-            "analiz": "Soyun ilahi ve güçlü bir kökene dayandırılması. Tanrı'nın kurt suretinde yeryüzüne inerek soyu başlatması.",
-            "kategori": "Ontoloji ve Köken"
+            "kavram": "Kama (Wedge) Stratejisi",
+            "kaynak": "Bozkır Harp Doktrini",
+            "analiz": "Düşman hattını merkezden yarmak için kullanılan V tipi formasyon. AŞİNA motorunda yüksek nüfuz gücüyle modellenir.",
+            "kategori": "Askeri Doktrin"
         },
         {
             "kavram": "Ergenekon Çıkış Algoritması",
-            "kaynak": "Teknik Lore (JSON)",
+            "kaynak": "Ergenekon Destanı",
             "analiz": "70 körüğün eşzamanlı çalışmasıyla demir dağın eritilmesi. Paralel işlem ve dikey ölçeklenebilirlik başarısı.",
             "kategori": "Sistem Mühendisliği"
+        },
+        {
+            "kavram": "Sürü Zekası (Swarm AI)",
+            "kaynak": "Biyotaklit (Biomimicry)",
+            "analiz": "Kurtların dağıtık ama eşgüdümlü hareket yeteneği. AŞİNA diliyle (DİZİLİŞ, ROL) simüle edilen temel mekanik.",
+            "kategori": "Yapay Zeka"
         }
     ];
 
@@ -46,14 +46,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Terminal Simulation
     const terminal = document.getElementById('terminal');
     const logs = [
-        { prefix: 'STRATEGY', msg: 'Turan Taktiği aktif edildi.', type: 'info' },
-        { prefix: 'WEATHER', msg: 'Hava durumu: KAR (Sıcaklık: -20°C)', type: 'info' },
-        { prefix: 'ULUMA', msg: '"Kar yağıyor, izler siliniyor..."', type: 'success' },
-        { prefix: 'BÖRÜ', msg: 'Sürü pusu moduna geçti (Range: 4)', type: 'info' },
-        { prefix: 'SYSTEM', msg: 'Enerji sınırı kontrol ediliyor (Limit: 15)', type: 'info' },
-        { prefix: 'ALERT', msg: 'Koyun sürüsü hilal çemberine girdi!', type: 'alert' },
-        { prefix: 'ACTION', msg: 'Saldırı başlatıldı: %85 başarı olasılığı.', type: 'success' },
-        { prefix: 'SYSTEM', msg: 'Av tamamlandı. Sürü enerjisi yenileniyor.', type: 'info' }
+        { prefix: 'SYSTEM', msg: 'AŞİNA Interpreter v2.1 başlatıldı.', type: 'info' },
+        { prefix: 'CONFIG', msg: 'Zemin: ORMAN | Strateji: KISKAC', type: 'info' },
+        { prefix: 'CAGRI', msg: '"Alfa yerini aldı, pusu bekleniyor."', type: 'success' },
+        { prefix: 'ACTION', msg: 'Formasyon: HİLAL nizamına geçiliyor.', type: 'info' },
+        { prefix: 'ALERT', msg: 'Düşman birimleri (Av) %60 kuşatıldı.', type: 'alert' },
+        { prefix: 'SYSTEM', msg: 'Zemin hızı optimizasyonu uygulandı (-%20).', type: 'info' },
+        { prefix: 'STATUS', msg: 'Operasyon başarılı. Sürü doygunluğu: %92.', type: 'success' }
     ];
 
     let logIndex = 0;

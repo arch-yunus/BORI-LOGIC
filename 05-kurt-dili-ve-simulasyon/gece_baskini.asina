@@ -1,0 +1,27 @@
+# AŞİNA 2.1 - Gece Baskını
+# Sık ormanlık alanda, alfa liderliğinde sinsi bir operasyon.
+
+SÜRÜ "Karanlık Ormanda Baskın"
+
+NİZAM GENİŞLİK 100
+NİZAM YÜKSEKLİK 25
+NİZAM STRATEJİ KISKAC
+NİZAM HAVA_DURUMU ACIK
+ZEMİN ORMAN
+
+BÖRÜ 8
+AV 20
+
+# Roller (Alfa liderliği)
+ROL 0 ALFA
+ROL 1 PUSUCU
+ROL 2 PUSUCU
+
+PUSU 6
+MÜDDET 400
+
+ÇAĞRI "Ay bulutların arkasına gizlendi, tam zamanı."
+ÇAĞRI "Alfa (A) yerini aldı, orman sessizliğini koruyor."
+ÇAĞRI "Kıskaç daralıyor, av henüz farkında değil."
+
+SON

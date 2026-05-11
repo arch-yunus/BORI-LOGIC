@@ -66,34 +66,41 @@ graph TD
 *   **Nümismatik:** Para ve mühürlerde kurdun sürekliliği.
 *   **Petroglifler:** Avrasya steplerindeki görsel hafıza.
 
-### 📂 [05. Kurt Dili (ULUYI) ve Simülasyon](05-kurt-dili-ve-simulasyon/)
-*   **ULUYI Scripting:** Kurt sürüsü davranışlarını tanımlayan egzotik dil.
+### 📂 [05. Kurt Soyu (AŞİNA) ve Simülasyon](05-kurt-dili-ve-simulasyon/)
+*   **AŞİNA Scripting:** Kurt sürüsü davranışlarını tanımlayan profesyonel strateji dili.
 *   **Sürü Zekası Simülasyonu:** Kadim stratejilerin algoritmik temsili.
 *   **Hava Durumu ve Enerji:** Çevresel faktörlerin (kar, fırtına) sürü üzerindeki etkisi.
-*   **Interpreter:** .uluy dosyalarını işleyen düşük seviyeli motor.
+*   **Interpreter:** .asina dosyalarını işleyen profesyonel DSL motoru.
 
 ---
 
-## 🐺 ULUYI Dili ve Sözdizimi (Syntax)
+## 🐺 AŞİNA Dili ve Sözdizimi (Syntax) 2.1
 
-`ULUYI`, bozkır stratejilerini makine diline tercüme etmek için geliştirilmiş alan özgü bir dildir (DSL).
+`AŞİNA`, bozkır stratejilerini profesyonel bir nizam ile dijital ortama aktaran alan özgü bir dildir (DSL).
 
 ### Temel Komutlar
-*   `AUUUUUU "[Başlık]"`: Simülasyon dosyasını başlatır/bitirir.
-*   `TÖRE [Parametre] [Değer]`: Sistem yapılandırmasını (Genişlik, Strateji, Hava Durumu) tanımlar.
-*   `BÖRÜ_SAYISI [n]`: Simülasyondaki aktif kurt birimi sayısı.
-*   `PUSU_KUR [Mesafe]`: Kurtların pusuya yatma yarıçapını belirler.
-*   `ULUMA "[Mesaj]"`: Simülasyon loglarına veri girişi yapar.
+*   `SÜRÜ "[Başlık]"`: Simülasyon dosyasını başlatır.
+*   `NİZAM [Param] [Değer]`: Sistem yapılandırmasını (GENİŞLİK, STRATEJİ, HAVA_DURUMU) tanımlar.
+*   `DİZİLİŞ [Tip]`: Sürü formasyonunu belirler (`HİLAL`, `KISKAC`, `KAMA`).
+*   `ZEMİN [Tip]`: Arazi tipini belirler (`BOZKIR`, `ORMAN`, `DAG`).
+*   `ROL [ID] [Tip]`: Belirli kurtlara özel roller atar (`ALFA`, `ÖNCÜ`, `PUSUCU`).
+*   `BÖRÜ [n]`: Simülasyondaki aktif kurt (börü) sayısı.
+*   `AV [n]`: Simülasyondaki hedef (av) sayısı.
+*   `PUSU [Mesafe]`: Pusu yarıçapını belirler.
+*   `ÇAĞRI "[Mesaj]"`: Log girişi yapar.
+*   `SON`: Dosyayı sonlandırır.
 
-### Örnek Betik
+### Örnek Betik (v2.1)
 ```uluy
-AUUUUUU "Kış Operasyonu"
-TÖRE STRATEJİ TURAN
-TÖRE HAVA_DURUMU KAR
-BÖRÜ_SAYISI 5
-PUSU_KUR 4
-ULUMA "Hilal daralıyor, beyaz ölüm yaklaşıyor."
-AUUUUUU "Son Ulam"
+SÜRÜ "Gece Baskını"
+NİZAM STRATEJİ KISKAC
+ZEMİN ORMAN
+BÖRÜ 8
+AV 30
+ROL 0 ALFA
+PUSU 6
+ÇAĞRI "Ay doğdu, kıskaç daralıyor."
+SON
 ```
 
 ---
@@ -152,7 +159,7 @@ Veri setlerimiz [JSON Schema](data/json/schema.json) standartlarına uygundur.
 ## 🚀 Yol Haritası (Roadmap)
 
 - [x] **Interactive Dashboard**: Veri havuzunu ve stratejileri görselleştiren web arayüzü.
-- [x] **ULUYI Language Evolution**: Enerji, hava durumu ve pusu mantığı eklenen egzotik dil.
+- [x] **AŞİNA Language Evolution**: Enerji, hava durumu ve pusu mantığı eklenen profesyonel dil.
 - [x] **Simulation 2.0**: Gelişmiş ASCII simülasyonu ve stratejik avlanma (Windows/Linux uyumlu).
 - [x] **Dataset Expansion**: Ergenekon ve Türeyiş destanlarının teknik JSON entegrasyonu.
 - [ ] **Mobile App**: Arşiv verilerine erişim sağlayan mobil uygulama konsepti.

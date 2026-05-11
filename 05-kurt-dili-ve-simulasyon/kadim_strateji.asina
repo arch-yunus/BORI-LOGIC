@@ -1,0 +1,32 @@
+# 🐺 ULUYI 2.0 - Bozkırın Kadim Algoritması: Kış Operasyonu
+# Bu dosya, profesyonel nizam ile stratejik operasyonları tanımlar.
+
+SÜRÜ "Buzlu Bozkırda Hilal"
+
+# NİZAM (Yapılandırma)
+NİZAM GENİŞLİK 80
+NİZAM YÜKSEKLİK 20
+NİZAM STRATEJİ TURAN
+NİZAM HAVA_DURUMU KAR
+NİZAM ENERJİ_SINIRI 15
+
+# VARLIKLAR
+BÖRÜ 6
+AV 35
+
+# STRATEJİK PARAMETRELER
+PUSU 4
+MÜDDET 500
+
+# ÇAĞRILAR (Logs)
+ÇAĞRI "Kar yağıyor, izler siliniyor; ama koku hala taze."
+ÇAĞRI "Börü, soğukta daha keskinleşir."
+ÇAĞRI "Pusu noktaları belirlendi (P), saldırı bekleniyor."
+ÇAĞRI "Hilal daralıyor, beyaz ölüm yaklaşıyor."
+
+# STRATEJİ NOTLARI
+# 1. HAVA_DURUMU KAR: Hareket hızı düşer, enerji yönetimi kritiktir.
+# 2. PUSU: Kurtlar (P) moduna geçerek hedefin yaklaşmasını bekler.
+# 3. ENERJİ_SINIRI: Bitkin düşen kurtlar sürüden ayrılır.
+
+SON

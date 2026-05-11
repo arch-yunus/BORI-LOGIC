@@ -1,47 +1,61 @@
-# 🐺 ULUYI Motoru ve Sürü Simülasyonu
+# 🐺 AŞİNA Motoru ve Sürü Simülasyonu (v2.1)
 
-Bu dizin, Bozkurt Mitolojisi projesinin algoritmik kalbidir. Kadim bozkır stratejilerini dijital bir ortamda simüle etmek için geliştirilen araçları içerir.
+Bu dizin, Bozkurt Mitolojisi projesinin algoritmik kalbidir. AŞİNA 2.1 sürümü ile stratejik derinlik artırılmış; formasyonlar, arazi etkileri ve birim rolleri sisteme entegre edilmiştir.
 
 ## 🛠️ Bileşenler
 
 ### 1. `interpreter.py`
-`.uluy` uzantılı egzotik betik dosyalarını işleyen yorumlayıcıdır. 
-*   **Özellikler**: Yapılandırma yönetimi, loglama ve özel anahtar kelime işleme.
-*   **Yeni Komutlar**: `HAVA_DURUMU`, `ENERJİ_SINIRI`, `PUSU_KUR`.
+`.asina` uzantılı profesyonel betik dosyalarını işleyen yorumlayıcıdır. 
+*   **Özellikler**: Yapılandırma yönetimi, loglama, formasyon ve rol atama.
+*   **Komutlar**: `SÜRÜ`, `NİZAM`, `BÖRÜ`, `AV`, `PUSU`, `ÇAĞRI`, `MÜDDET`, `DİZİLİŞ`, `ZEMİN`, `ROL`, `SON`.
 
 ### 2. `simulation.py`
-ASCII tabanlı sürü zekası motorudur.
-*   **Varlıklar**: Börü (Kurt) ve Koyun.
-*   **Mantık**: Turan taktiği, hava durumu etkileri (kar/fırtına), enerji yönetimi ve pusu (Ambush) durumları.
-*   **Görselleştirme**: Terminal üzerinde renkli ve dinamik ASCII grafikleri.
+Gelişmiş ASCII tabanlı sürü zekası motorudur.
+*   **Varlıklar**: Börü (Kurt) ve Av (Koyun). `ALFA` rollerine sahip kurtlar 'A' ile gösterilir.
+*   **Mantık**: Turan, Kıskaç ve Kama stratejileri.
+*   **Çevresel Faktörler**: Hava durumu (Kar/Fırtına) ve Arazi (Bozkır/Orman/Dağ) etkileri.
 
-### 3. `kadim_strateji.uluy`
-Simülasyon için kullanılan ana senaryo dosyasıdır. Zorlu kış şartlarında bir av operasyonunu tanımlar.
+### 3. Senaryolar
+*   `kadim_strateji.asina`: Klasik kış operasyonu.
+*   `gece_baskini.asina`: Ormanlık alanda pusu ve kıskaç harekatı.
+*   `turan_nizami.asina`: Dağlık arazide kama nizamı gösterimi.
 
 ## 🚀 Çalıştırma
 
-Simülasyonu başlatmak için şu komutu kullanın:
-
 ```bash
-python simulation.py
+python simulation.py gece_baskini.asina
 ```
 
-Özel bir betik dosyasıyla çalıştırmak için:
+## 📜 Sözdizimi (Syntax) 2.1
 
-```bash
-python simulation.py <dosya_adi>.uluy
-```
+AŞİNA 2.1, bozkır stratejilerini çok boyutlu bir nizam ile ifade eder:
 
-## 📜 Sözdizimi (Syntax) Örneği
+| Komut | Açıklama |
+| :--- | :--- |
+| `DİZİLİŞ [Tip]` | Sürü formasyonu (`HİLAL`, `KISKAC`, `KAMA`). |
+| `ZEMİN [Tip]` | Arazi hızı ve gizlilik çarpanı (`BOZKIR`, `ORMAN`, `DAG`). |
+| `ROL [ID] [Tip]` | Birimlere özel yetenek/davranış atar (`ALFA`, `PUSUCU`). |
+| `SÜRÜ "[Başlık]"` | Simülasyon bloğunu başlatır ve isimlendirir. |
+| `NİZAM [Param] [Değer]` | Sistem yapılandırmasını (GENİŞLİK, STRATEJİ, HAVA_DURUMU vb.) tanımlar. |
+| `BÖRÜ [n]` | Simülasyondaki aktif kurt (börü) sayısı. |
+| `AV [n]` | Simülasyondaki hedef (koyun/av) sayısı. |
+| `PUSU [Mesafe]` | Kurtların pusuya yatma yarıçapını belirler. |
+| `ÇAĞRI "[Mesaj]"` | Simülasyon loglarına veri girişi yapar. |
+| `MÜDDET [n]` | Simülasyonun toplam iterasyon süresi. |
+| `SON` | Simülasyon dosyasını sonlandırır. |
+
+### Örnek Betik
 
 ```uluy
-AUUUUUU "Kış Operasyonu"
-TÖRE STRATEJİ TURAN
-TÖRE HAVA_DURUMU KAR
-BÖRÜ_SAYISI 5
-PUSU_KUR 4
-ULUMA "Bozkırın sessizliği bozuluyor..."
-AUUUUUU "Son Ulam"
+SÜRÜ "Kış Operasyonu"
+NİZAM STRATEJİ TURAN
+NİZAM HAVA_DURUMU KAR
+BÖRÜ 5
+AV 30
+PUSU 4
+MÜDDET 500
+ÇAĞRI "Bozkırın sessizliği bozuluyor..."
+SON
 ```
 
 ---

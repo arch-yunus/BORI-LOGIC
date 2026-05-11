@@ -1,0 +1,29 @@
+# AŞİNA 2.1 - Turan Nizamı ve Kama Stratejisi
+# Dağlık arazide merkezi yarma harekatı.
+
+SÜRÜ "Sarp Geçitte Kama"
+
+NİZAM GENİŞLİK 80
+NİZAM YÜKSEKLİK 20
+NİZAM STRATEJİ KAMA
+NİZAM HAVA_DURUMU FIRTINA
+ZEMİN DAG
+
+BÖRÜ 12
+AV 50
+
+# Formasyon ve Roller
+DİZİLİŞ KAMA
+ROL 0 ALFA
+ROL 1 ALFA
+ROL 10 ARTCI
+ROL 11 ARTCI
+
+PUSU 3
+MÜDDET 600
+
+ÇAĞRI "Fırtına çıktı, görüş mesafesi düştü."
+ÇAĞRI "Kama (A) nizamında ilerliyoruz, hedef merkez!"
+ÇAĞRI "Dağlar bizim evimiz, fırtına bizim dostumuz."
+
+SON
