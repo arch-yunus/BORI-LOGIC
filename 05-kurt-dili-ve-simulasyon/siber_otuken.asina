@@ -1,0 +1,28 @@
+# AŞİNA 3.0 - Siber Ötüken (2050)
+# Dijital vatan savunması. Dağıtık veri muhafızları (Börü).
+
+SÜRÜ "Siber Ötüken: Veri Muhafızları"
+
+NİZAM GENİŞLİK 100
+NİZAM YÜKSEKLİK 25
+NİZAM STRATEJİ KISKAC
+NİZAM HAVA_DURUMU FIRTINA
+ZEMİN DAG
+
+BÖRÜ 20
+AV 80
+
+# Roller: Siber Muhafızlar
+ROL 0 ALFA
+ROL 5 PUSUCU
+ROL 10 PUSUCU
+ROL 15 PUSUCU
+
+PUSU 12
+MÜDDET 1200
+
+ÇAĞRI "Veri akışı engellendi, siber surlar örülüyor."
+ÇAĞRI "Kıskaç protokolü aktif. İzinsiz erişimler (Av) temizleniyor."
+ÇAĞRI "Ötüken sunucusu (Otağ) güvende, Kut puanı yükseliyor."
+
+SON

@@ -37,13 +37,14 @@ class Wolf(Entity):
         self.energy = 150
         self.state = "hunting" 
         self.role = "serbest"
+        self.kut = 0.5 # Range 0 to 1
+        self.learning_factor = 0.1
 
     def hunt(self, sheeps, width, height, config):
         strategy = config.get("strategy", "standart")
         weather = config.get("weather", "acik")
         terrain = config.get("terrain", "bozkir")
         ambush_range = config.get("ambush_range", 5)
-        formation = config.get("formation", "serbest")
         
         self.role = config.get("roles", {}).get(self.id, "serbest")
         
@@ -51,64 +52,63 @@ class Wolf(Entity):
             self.move(width, height, config)
             return
 
-        # Find closest sheep or role-based target
+        # Kut impacts speed and vision
+        vision_boost = int(self.kut * 10)
         target = min(sheeps, key=lambda s: (s.x - self.x)**2 + (s.y - self.y)**2)
         dist_sq = (target.x - self.x)**2 + (target.y - self.y)**2
         
         move_x = 0
         move_y = 0
 
+        # Learning Factor Adjustments
+        step = 1 if random.random() < (0.5 + self.learning_factor) else 0
+
         # Strategy Logic
         if strategy == "turan":
-            # Turan strategy: Flank and split
-            if dist_sq > 64: # Far
-                move_x = 1 if target.x > self.x else -1
+            if dist_sq > 64:
+                move_x = step if target.x > self.x else -step
                 move_y = random.choice([-1, 0, 1])
-            elif dist_sq > ambush_range**2: # Medium
+            elif dist_sq > ambush_range**2:
                 self.state = "ambushing"
-                move_x = 1 if target.x > self.x else -1
-                move_y = 1 if target.y > self.y else -1
-            else: # Strike
+                move_x = step if target.x > self.x else -step
+                move_y = step if target.y > self.y else -step
+            else:
                 self.state = "hunting"
-                move_x = 1 if target.x > self.x else -1
-                move_y = 1 if target.y > self.y else -1
+                move_x = step if target.x > self.x else -step
+                move_y = step if target.y > self.y else -step
 
         elif strategy == "kiskac":
-            # Pincer: Move to sides then close in
-            if self.id % 2 == 0: # Left arm
-                if self.x > target.x - 5: move_x = -1
-                else: move_x = 0
-            else: # Right arm
-                if self.x < target.x + 5: move_x = 1
-                else: move_x = 0
-            move_y = 1 if target.y > self.y else -1
+            offset = 5 - vision_boost // 2
+            if self.id % 2 == 0:
+                move_x = -1 if self.x > target.x - offset else 0
+            else:
+                move_x = 1 if self.x < target.x + offset else 0
+            move_y = step if target.y > self.y else -step
 
         elif strategy == "kama":
-            # Wedge: Focused central push
             if self.role == "alfa":
                 move_x = 1 if target.x > self.x else -1
                 move_y = 1 if target.y > self.y else -1
             else:
-                # Follow the leader or cluster
+                # Grouping logic
                 move_x = 1 if target.x > self.x else -1
                 move_y = 1 if target.y > self.y else -1
 
         else:
-            # Standart: Direct chase
             move_x = 1 if target.x > self.x else -1
             move_y = 1 if target.y > self.y else -1
 
-        # Terrain/Weather penalties
-        penalty = 0.1
-        if terrain == "dag": penalty += 0.3
-        if weather == "firtina": penalty += 0.4
+        # Non-linear Terrain/Weather penalties
+        penalty = 0.05
+        if terrain == "dag": penalty += 0.4 * (1.1 - self.kut)
+        if weather == "firtina": penalty += 0.5 * (1.1 - self.kut)
         
         if random.random() < penalty:
             move_x, move_y = 0, 0
 
         self.x = max(0, min(width - 1, self.x + move_x))
         self.y = max(0, min(height - 1, self.y + move_y))
-        self.energy -= 1
+        self.energy -= (1.2 - self.kut)
 
 class Sheep(Entity):
     def __init__(self, x, y):
@@ -130,13 +130,13 @@ def run_simulation(config, logs=[]):
         
         weather_icon = "[ACIK]" if weather == "acik" else "[KAR]" if weather == "kar" else "[FIRTINA]"
         terrain_label = f"Zemin: {terrain.upper()}"
-        print(f"\033[93m--- {config['title']} --- {weather_icon} {terrain_label} Dongu: {i+1}/{config['iterations']}\033[0m")
-        print(f"Strateji: {strategy.upper()} | Boru: {len(wolves)} | Koyun: {len(sheeps)} | Hava: {weather.upper()}")
+        avg_kut = sum(w.kut for w in wolves) / len(wolves) if wolves else 0
+        
+        print(f"\033[93m--- {config['title']} (AŞİNA v3.0) --- {weather_icon} {terrain_label}\033[0m")
+        print(f"Strateji: {strategy.upper()} | KUT: {avg_kut:.2f} | Boru: {len(wolves)} | Koyun: {len(sheeps)}")
         
         if logs and i < len(logs):
             print(f"\033[94mCAGRI: \"{logs[i]}\"\033[0m")
-        elif logs:
-            print(f"\033[90mYankilan: {logs[-1]}\033[0m")
 
         grid = [[' ' for _ in range(width)] for _ in range(height)]
         
@@ -164,7 +164,9 @@ def run_simulation(config, logs=[]):
             for s in sheeps[:]:
                 if w.x == s.x and w.y == s.y:
                     sheeps.remove(s)
-                    w.energy += 40 
+                    w.energy += 50
+                    w.kut = min(1.0, w.kut + 0.1) # Gain Kut
+                    w.learning_factor = min(1.0, w.learning_factor + 0.05)
             
             if w.energy <= energy_limit:
                 wolves.remove(w)
@@ -173,11 +175,11 @@ def run_simulation(config, logs=[]):
             s.move(width, height, config)
 
         if not sheeps:
-            print("\033[91mAV TAMAMLANDI. Suru doydu ve bozkir sessizlesti.\033[0m")
+            print("\033[93mKUTLU ZAFER. Sürü doydu ve nizam sağlandı.\033[0m")
             break
         
         if not wolves:
-            print("\033[91mBORULER TUKENDI. Doga dengesini kaybetti.\033[0m")
+            print("\033[91mBORULER TUKENDI. Töre bozuldu.\033[0m")
             break
             
         time.sleep(0.05)

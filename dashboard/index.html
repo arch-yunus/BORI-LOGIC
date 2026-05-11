@@ -3,89 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bozkurt Hub | Kadim Strateji ve Mitoloji</title>
-    <title>BÖRI-LOGIC | Stratejik Vizyon</title>
+    <title>BÖRI-LOGIC | Kadim Strateji Komuta Merkezi</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="background-overlay"></div>
-    
+<body class="command-center">
+    <div class="stars-overlay"></div>
+    <div class="scanline"></div>
+
     <nav class="glass-nav">
-        <div class="logo">🐺 BÖRI-LOGIC</div>
-        <ul class="nav-links">
-            <li><a href="#home">Ana Sayfa</a></li>
-            <li><a href="#lore">Mitoloji</a></li>
-            <li><a href="#simulator">Simülatör</a></li>
-            <li><a href="#strategies">Stratejiler</a></li>
-        </ul>
+        <div class="logo">🐺 BÖRI-LOGIC <span>v3.0</span></div>
+        <div class="nav-status">
+            <span class="status-item"><i class="dot success"></i> SİSTEM: ÇALIŞIYOR</span>
+            <span class="status-item"><i class="dot gold"></i> KUT: %92</span>
+        </div>
     </nav>
 
-    <header id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="fade-in">Kurt İzinde Kadim Bilgelik</h1>
-            <p class="tagline">Biyotaklit, Hareket Felsefesi ve Türk Mitolojisi Arşivi</p>
-            <div class="hero-btns fade-in">
-                <a href="#lore" class="btn primary">Keşfetmeye Başla</a>
-                <a href="#simulator" class="btn secondary">Sürü Zekası</a>
+    <main class="dashboard-layout">
+        <!-- Sidebar: IDE & Config -->
+        <aside class="sidebar fade-in">
+            <div class="panel-header">
+                <h3>AŞİNA IDE</h3>
+                <span class="file-name">kadim_strateji.asina</span>
             </div>
-        </div>
-    </header>
+            <div class="code-editor" id="code-editor">
+                <div class="line-numbers"></div>
+                <pre contenteditable="true" id="code-content">
+SÜRÜ "Ötüken Savunması"
+NİZAM STRATEJİ KISKAC
+ZEMİN BOZKIR
+BÖRÜ 12
+AV 50
+ROL 0 ALFA
+PUSU 8
+ÇAĞRI "Töreyi koru, vatanı savun."
+SON</pre>
+            </div>
+            <div class="controls">
+                <button id="run-sim" class="btn-glow">SİSTEMİ TETİKLE</button>
+                <button id="reset-sim" class="btn-ghost">SIFIRLA</button>
+            </div>
+            
+            <div class="panel-header mt-2">
+                <h3>SİSTEM ANALİZİ (TÜZ)</h3>
+            </div>
+            <div class="stats-panel">
+                <div class="stat-item">
+                    <span>ENERJİ DENGESİ</span>
+                    <div class="progress-bar"><div class="fill" style="width: 75%"></div></div>
+                </div>
+                <div class="stat-item">
+                    <span>SÜRÜ UYUMU</span>
+                    <div class="progress-bar"><div class="fill gold" style="width: 88%"></div></div>
+                </div>
+            </div>
+        </aside>
 
-    <main>
-        <section id="lore" class="section">
-            <div class="section-header">
-                <h2>Mitolojik Veri Havuzu</h2>
-                <p>Destanlardan süzülen ontolojik ve stratejik veriler.</p>
+        <!-- Main: Visualizer -->
+        <section class="main-stage">
+            <div class="visualizer-container">
+                <canvas id="simCanvas"></canvas>
+                <div class="overlay-info">
+                    <div class="coord-display">X: <span id="curX">0</span> Y: <span id="curY">0</span></div>
+                    <div class="strategy-label">AKTİF NİZAM: <span id="activeStrat">KISKAÇ</span></div>
+                </div>
             </div>
-            <div id="lore-container" class="grid-container">
-                <div class="loader">Yükleniyor...</div>
+            
+            <div class="terminal-mini" id="terminal">
+                <div class="terminal-header">LOG AKIŞI</div>
+                <div class="terminal-body" id="logBody">
+                    <!-- Logs will be injected here -->
+                </div>
             </div>
         </section>
 
-        <section id="simulator" class="section alternate">
-            <div class="section-header">
-                <h2>Kadim Strateji Simülatörü</h2>
-                <p>AŞİNA motorundan gelen canlı veri akışı (Mockup).</p>
+        <!-- Right: Lore & Meta -->
+        <aside class="meta-panel fade-in">
+            <div class="panel-header">
+                <h3>BÖRKÜK CODEX</h3>
             </div>
-            <div class="terminal-container" id="terminal">
-                <div class="terminal-line"><span class="time">[08:00:00]</span><span class="prefix">SYSTEM</span><span class="msg">AŞİNA Interpreter v2.0 başlatıldı...</span></div>
-                <div class="terminal-line"><span class="time">[08:00:01]</span><span class="prefix">SYSTEM</span><span class="msg">kadim_strateji.asina yükleniyor...</span></div>
-                <!-- Loglar JS ile eklenecek -->
+            <div id="lore-container" class="lore-scroll">
+                <!-- Lore cards will be injected here -->
             </div>
-        </section>
-
-        <section id="strategies" class="section">
-            <div class="section-header">
-                <h2>Sürü Stratejileri</h2>
-                <p>Uygulanan algoritmalar ve askeri taktikler.</p>
-            </div>
-            <div class="strategy-cards grid-container">
-                <div class="card">
-                    <div class="card-icon">🏹</div>
-                    <h3>Turan Taktiği</h3>
-                    <p>Kurtların çevreleme hareketinden ilham alan, asimetrik bir kuşatma algoritması. Hilal kapanırken düşman manevra alanını kaybeder.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">📡</div>
-                    <h3>Dağıtık İletişim</h3>
-                    <p>Uluma protokolleri ile veri iletimi. Sürü içindeki Alfa ve Beta birimleri arasında kesintisiz koordinasyon sağlar.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">❄️</div>
-                    <h3>Kış Operasyonu</h3>
-                    <p>Düşük hava sıcaklıklarında enerji optimizasyonu. Karlı zeminlerde avın izini sürme ve pusu (Ambush) mekanikleri.</p>
-                </div>
-            </div>
-        </section>
+        </aside>
     </main>
-
-    <footer>
-        <p>&copy; 2026 Bozkurt Mitolojisi Projesi. "Böri tegi erdemlik."</p>
-        <p style="font-size: 0.8rem; margin-top: 10px; color: #555;">v1.6.0-alpha | Comprehensive Update</p>
-    </footer>
 
     <script src="app.js"></script>
 </body>

@@ -1,0 +1,27 @@
+# AŞİNA 3.0 - Malazgirt Ruhu (1071)
+# Sultan Alparslan'ın dikey yarma ve sahte geri çekilme algoritması.
+
+SÜRÜ "Malazgirt: Kurt Kapanı"
+
+NİZAM GENİŞLİK 120
+NİZAM YÜKSEKLİK 30
+NİZAM STRATEJİ TURAN
+NİZAM HAVA_DURUMU ACIK
+ZEMİN BOZKIR
+
+BÖRÜ 15
+AV 60
+
+# Liderlik: Sultan Alparslan (Alfa)
+ROL 0 ALFA
+ROL 1 ÖNCÜ
+ROL 2 ÖNCÜ
+
+PUSU 10
+MÜDDET 1000
+
+ÇAĞRI "Gevher Nesibe'nin dualarıyla, beyaz kefenimizle sahadayız."
+ÇAĞRI "Merkez geri çekiliyor, kanatlar (Hilal) kapanmaya hazır."
+ÇAĞRI "Biz azız ama nizamımız kaim, kutumuz bakidir."
+
+SON
