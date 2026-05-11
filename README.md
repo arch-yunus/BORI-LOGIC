@@ -5,7 +5,7 @@
 [![Lisans: CC BY-NC-SA 4.0](https://img.shields.io/badge/Lisans-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![Kapsam: Antropoloji, Sibernetik & Medeniyet](https://img.shields.io/badge/Kapsam-Antropoloji%2C%20Sibernetik%20%26%20Medeniyet-blue.svg)]()
 [![Versiyon: 2.5.0-alpha](https://img.shields.io/badge/Versiyon-2.5.0--alpha-brightgreen.svg)]()
-[![Status: Civilizational Manifesto](https://img.shields.io/badge/Status-Civilizational%20Manifesto-blue.svg)]()
+[![Status: Visionary Whitepaper](https://img.shields.io/badge/Status-Visionary%20Whitepaper-blue.svg)]()
 
 > *"Yukarıda mavi gök, aşağıda yağız yer yaratıldığında, ikisinin arasında insan oğlu yaratılmış... Gökten inen ışık, bozkırın kurduyla birleştiğinde; sistem nizam bulmuş, töre kaim olmuştur."*
 
@@ -23,91 +23,126 @@ Bu proje, Orta Asya bozkır kültürünün ontolojik özü olan **Kurt (Böri / 
 
 Teknoloji, sadece bir araç değil; üretildiği kültürün dünya görüşünü taşıyan bir "mantık kılıfıdır". Bugün kullandığımız algoritmalar, Silikon Vadisi veya Şenzen'in ontolojik tercihlerini (merkeziyetçilik, gözetim, doğrusal büyüme) dayatmaktadır.
 
-**Bozkurt Mitolojisi Projesi**, bu dayatmaya karşı bir **"Teknolojik Egemenlik"** önerisidir:
+**BÖRI-LOGIC**, bu dayatmaya karşı bir alternatif sunar:
 
 1.  **Dağıtık Ontoloji (Siber-Bozkır)**: Bozkır, sınırsız ve merkezi olmayan bir alandır. Teknolojimiz de; tek bir sunucuya değil, "sürü" gibi hareket eden, her bir parçası otonom ama töreye (protokole) bağlı bir yapıdadır.
 2.  **Sibernetik Töre**: Töre, bozkırda değişmez koddur. Yazılımda "Töre", sistemin her koşulda (fırtına, savaş, açlık) nasıl davranacağını belirleyen, esnemez ama adaptif algoritmalardır.
-3.  **Kut ve Tüz**: Teknolojik sistemin meşruiyeti (Kut) ve iç dengesi (Tüz), Batılı "verimlilik" (efficiency) kavramının ötesinde, sistemin "var olma amacı" ve "etik sürekliliği" ile ölçülür.
+3.  **Kut ve Tüz**: Teknolojik sistemin meşruiyeti (Kut) ve iç dengesi (Tüz), Batılı "verimlilik" kavramının ötesinde, sistemin "etik sürekliliği" ile ölçülür.
 
 ---
 
-## 🔬 Etolojik Temeller ve Biyotaklit (Biomimicry)
+## 🔬 Algoritmik Derinlik: Bozkırın Matematiksel Ruhu
 
-Kurt, bozkır medeniyetleri için bir optimizasyon modelidir:
+BÖRI-LOGIC içerisinde kullanılan stratejiler, sadece görsel bir hareket değil, karmaşık birer matematiksel modeldir.
 
-*   **Asimetrik Zeka**: Kurdun avlanma stratejisi, tarihin ilk "hata payı yüksek ama başarı odaklı" (probabilistic) algoritmasıdır.
-*   **Lojistik Hafiflik**: Nomadizm, veriyi ve gücü sabit bir noktada (storage) tutmak yerine, hareket halindeki birimlere (edge computing) dağıtmayı öğretir.
-*   **Mübarek Yüz (The Sacred Face)**: Teknoloji, sadece soğuk bir kod yığını değil; kurdun yüzündeki sadakat ve kararlılık gibi, kullanıcıyla "manevi bir mutabakat" kuran bir arayüzdür.
+### 1. HİLAL (Asimetrik Kuşatma)
+*   **Mantık**: Hedef birimin koordinatlarını merkez alarak, sürü birimlerinin radyal bir dağılımla (R-theta) çevrelenmesi.
+*   **Optimizasyon**: Avın kaçış vektörleri analiz edilir ve sürü, bu vektörlerin en yüksek olasılıklı olduğu noktalarda yoğunlaşır.
+*   **Kod Karşılığı**: `Wolf.hunt` metodunda, `dist_sq > ambush_range**2` koşuluyla pusu mekaniği tetiklenir.
+
+### 2. KAMA (Merkezi Yarma)
+*   **Mantık**: Alfa liderliğinde, en düşük direnç noktasından sisteme sızma.
+*   **Mekanik**: Birimlerin enerjisi tek bir vektörde birleştirilir (Vector Aggregation).
+*   **Bozkır Karşılığı**: Düşman hattını en zayıf noktasından parçalayıp moral ve lojistik bütünlüğü bozma.
 
 ---
 
-## 🏗️ Teknik Mimari: AŞİNA DSL v2.5
+## ⚔️ Harp Tarihi Karşılaştırmalı Analizi
 
-AŞİNA projesi, bu medeniyet tasavvurunun teknik uygulama alanıdır.
+BÖRI-LOGIC'in dayandığı stratejilerin, klasik Batı askeri mantığından farkı şöyledir:
 
-### İş Akışı: Töre'den Kod'a
+| Özellik | Batı (Lineer/Statik) | BÖRI-LOGIC (Dağıtık/Dinamik) |
+| :--- | :--- | :--- |
+| **Komuta Yapısı** | Katı Hiyerarşi (Top-Down) | Otonom Birimler (Alfa-Beta Hiyerarşisi) |
+| **Lojistik** | Merkezi Depolama (Silo) | Hareket Halinde Tedarik (Nomadik) |
+| **Harp Alanı** | Belirli Sınırlar (Static Grid) | Sınırsız Bozkır (Fluid Simulation) |
+| **Hata Toleransı** | Düşük (Merkez çökerse sistem çöker) | Yüksek (Her kurt bir liderdir) |
+| **Metafor** | Satranç (Sınırlı hamleler) | Av (Sınırsız ihtimaller) |
+
+---
+
+## 🏗️ Teknik Mimari ve Simülasyon Fiziği
+
+AŞİNA dilli simülasyon motoru, aşağıdaki fiziksel ve sistemsel kurallara göre çalışır:
+
+### Enerji Ekonomisi Formülü
+Sistemdeki her birim (`Entity`), her döngüde (`iteration`) şu formüle göre enerji kaybeder:
+`Energy_Loss = Base_Rate * (Terrain_Multiplier + Weather_Penalty) * Movement_Vector`
+
+*   **Zemin Çarpanı (`ZEMİN`)**: `DAG` (1.5x), `ORMAN` (1.2x), `BOZKIR` (1.0x).
+*   **Hava Durumu (`NİZAM`)**: `FIRTINA` (2.0x), `KAR` (1.5x), `ACIK` (1.0x).
+
+### İş Akışı Diyagramı
 ```mermaid
 graph TD
-    Tore[Kadim Töre / Felsefe] --> Ashina[AŞİNA DSL Script]
-    Ashina --> Interp[Ashina Interpreter]
-    Interp --> Engine[Simulation Engine]
-    Engine --> Steppe[Digital Steppe Visualizer]
-    Steppe --> Insight[Strategic & Philosophical Insight]
+    A[AŞİNA Script] --> B[Interpreter]
+    B --> C[Config Object]
+    C --> D[Simulation Loop]
+    D --> E{Koşul Kontrolü}
+    E -->|Börü Enerji > Limit| F[Avlanmaya Devam]
+    E -->|Börü Enerji < Limit| G[Sürüden Ayrılma]
+    F --> H[ASCII Grid Rendering]
+    G --> H
 ```
 
-### AŞİNA 2.5 Komut Referansı (Genişletilmiş)
+---
 
-| Komut | Felsefi Karşılığı | Teknik Fonksiyon |
-| :--- | :--- | :--- |
-| `SÜRÜ` | Birlik ve Beraberlik | Program Bloğu Başlangıcı |
-| `NİZAM` | Sistem Düzeni | Konfigürasyon ve Parametreler |
-| `DİZİLİŞ` | Taktiksel Formasyon | Sürü Hareket Algoritması |
-| `ZEMİN` | Coğrafi Kader | Çevresel Katsayılar ve Limitler |
-| `ROL` | Liyakat ve Görev | Birimlerin Otonom Davranış Kodları |
-| `BÖRÜ` | Muhafız ve Aktör | Aktif Süreç Sayısı |
-| `ÇAĞRI` | Veri İletimi ve Uluma | Loglama ve Haberleşme Protokolü |
-| `SON` | Vadi Sessizliği | Program Terminasyonu |
+## 📜 AŞİNA v2.5 Dilbilgisi ve Sözdizimi Rehberi
+
+AŞİNA, sadece komutlardan değil, bir "nizam"dan oluşur.
+
+*   **Blok Başlatma**: Her dosya `SÜRÜ "[Başlık]"` ile başlamalıdır. Bu, sistem hafızasında (RAM) yeni bir "Bozkır" alanı açar.
+*   **Nizam Tanımlama**: `NİZAM` komutları sistemin sabitlerini (Global Constants) belirler.
+*   **Rol Atama**: `ROL` komutu, nesne tabanlı programlama (OOP) mantığıyla her birime farklı metodlar atar.
+*   **Terminasyon**: `SON` komutu, tüm açık soketleri kapatır ve simülasyonu güvenli bir şekilde bitirir.
 
 ---
 
-## ⚔️ Harp Doktrini ve Algoritmalar
+## 🏔️ Gelecek Vizyonu: 2050 ve Siber-Ötüken
 
-*   **HİLAL (Turan)**: En büyük "Dağıtık Saldırı" (DDoS - Distributed Defense of Steppe) modelidir.
-*   **KISKAÇ (Pincer)**: Paralel işlemci (Parallel Processing) mantığıyla hedefi parçalama.
-*   **KAMA (Wedge)**: Kritik bir düğüme (Node) odaklanmış yüksek yoğunluklu veri transferi.
+BÖRI-LOGIC, kısa vadeli bir yazılım projesi değil, uzun vadeli bir medeniyet inşasıdır:
 
----
-
-## 🏔️ Gelecek Vizyonu: AŞİNA 3.0 ve Ötesi
-
-Gelecekte teknolojiyi "bizim" kılacak projeksiyonlarımız:
-
-1.  **KUT Modeli**: Sistem başarısının "Kut" (Sistemsel Bereket) puanıyla ölçülmesi; sadece 'çalışan' değil, 'değer üreten' yazılım.
-2.  **TÜZ Algoritması**: Kendi kendini dengeleyen (Self-healing), ekosistemdeki adaleti sağlayan global yük dengeleyici.
-3.  **TOY Konsensüsü**: Birimlerin merkezi olmayan bir otorite altında "mutabakat" sağladığı Blockchain tabanlı karar alma mekanizmaları.
-4.  **AŞİNA 4.0: Medeniyet İşletim Sistemi**: Toplumsal süreçlerin, adaletin ve savunmanın; kadim töre algoritmalarıyla dijitalleştiği bir gelecek.
+1.  **AŞİNA 3.0: KUT Protokolü**: Sistemsel meşruiyetin blockchain tabanlı doğrulanması.
+2.  **AŞİNA 4.0: UMAY AI**: Kendi kendini onaran (self-healing), besleyici ve koruyucu bir yapay zeka katmanı.
+3.  **AŞİNA 5.0: SİBER-ÖTÜKEN**: Tüm toplumsal ve teknik verilerin, kadim töre algoritmalarıyla korunduğu, dış müdahalelere kapalı, kültürel-teknolojik bir "Güvenli Bölge".
 
 ---
 
-## 🛠️ Geliştirici Rehberi
+## 🛠️ Geliştirici ve Katkıda Bulunma Rehberi
 
-### Kurulum ve "İlk Uluma"
-1. `git clone ...`
-2. `cd 05-kurt-dili-ve-simulasyon`
-3. `python simulation.py kadim_strateji.asina`
+### Kurulum
+```bash
+git clone https://github.com/arch-yunus/BORI-LOGIC.git
+cd BORI-LOGIC/05-kurt-dili-ve-simulasyon
+python simulation.py kadim_strateji.asina
+```
 
-### Katkıda Bulunma
-Bu projeye katkıda bulunmak, sadece kod yazmak değil; bir medeniyet tasavvuruna ortak olmaktır. Felsefi katkılarınız ve stratejik algoritmalarınız için `Pull Request` göndermekten çekinmeyin.
+### Katkı İlkeleri (Töreye Bağlılık)
+*   **Özgünlük**: Batılı kütüphane ve mantıklara bağımlılığı minimize edin.
+*   **Sembolizm**: Kod içerisindeki değişken isimlerinde kültürel terminolojiye sadık kalın.
+*   **Erdemlik**: Yazdığınız kodun sistemin "Tüz"üne (dengesine) zarar vermediğinden emin olun.
 
 ---
 
-## 📄 Lisans ve Meşruiyet
+## 📖 Genişletilmiş BÖRI-LOGIC Sözlüğü
 
-Bu arşiv **CC BY-NC-SA 4.0** lisansı altındadır. Projenin ruhuna aykırı, merkeziyetçi ve etik dışı kullanımlardan kaçınılması; kadim törenin bir gereğidir.
+*   **Aşina**: Kurucu mantık, kök dizin.
+*   **Börü**: İşlemci (Processor), aktif birim.
+*   **Av**: Veri (Data), hedef birim.
+*   **Töre**: Algoritma, protokol.
+*   **Toy**: Consensus, senkronizasyon noktası.
+*   **Kut**: Legitimacy, sistem başarısı.
+*   **Tüz**: Load Balancing, sistem dengesi.
+
+---
+
+## 📄 Lisans ve Etik Bildirim
+
+Bu arşiv **CC BY-NC-SA 4.0** lisansı altındadır. Projenin ruhuna aykırı, merkeziyetçi, gözetim odaklı ve etik dışı kullanımlar "Töre"ye aykırı kabul edilir.
 
 <br>
 <p align="center">
   <b>"Böri tegi erdemlik"</b><br>
   <i>(Kurt gibi erdemli, otonom ve kararlı)</i><br>
-  Hareket et, gözlemle ve nizamı kur.
+  Nizamı kur, stratejiyi yönet, geleceği kodla.
 </p>
