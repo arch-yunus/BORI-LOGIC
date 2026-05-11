@@ -13,6 +13,22 @@
 
 Bu arşiv; Orta Asya bozkır kültürünün ontolojik temeli olan **Kurt (Böri / Aşina)** figürünü, basit bir mitolojik unsurun ötesinde, erken dönem bir **biyotaklit (biomimicry)**, sistem modellemesi ve asimetrik harp stratejisi vakası olarak inceleyen disiplinlerarası bir referans kütüphanesidir.
 
+---
+
+## ✨ Özgün Teknoloji Paradigması: Batı-Merkezli Teknolojiye Alternatif
+
+Mevcut teknolojik ekosistem, büyük ölçüde Avrupa-merkezli (Western-centric) bir üretim sürecinin ve buna bağlı bir ontolojinin ürünüdür. Bu durum, teknolojinin sadece işleyişini değil, aynı zamanda düşünce biçimini ve problem çözme algoritmalarını da Batılı metaforlarla sınırlandırmıştır. 
+
+**Bozkurt Mitolojisi Projesi**, bu tek tipleşmeye karşı bir **"Teknolojik Egemenlik"** ve **"Kültürel Ontoloji"** önerisidir. Hedefimiz; teknolojiyi sadece tüketmek değil, onu kendi kültürümüzden, tarihimizden ve kadim bozkır mantığımızdan süzülen bir bakış açısıyla yeniden üretmektir.
+
+*   **Bozkır Ontolojisi**: Merkeziyetçi yapılar yerine, dağıtık (distributed) ve otonom (autonomous) sistemleri esas alır.
+*   **Kut ve Tüz**: Teknolojiyi sadece mekanik bir araç olarak değil, "Kut" (meşruiyet ve verim) ve "Tüz" (evrensel denge ve hukuk) kavramlarıyla entegre bir sistem olarak modeller.
+*   **AŞİNA Vizyonu**: Yazılım dillerini ve algoritmaları, Batılı mantık kalıplarından kurtarıp; bozkırın stratejik dehası (Turan Taktiği, Sürü Zekası) ile yeniden kodlamayı amaçlar.
+
+Bu proje, "bizim olanı" teknolojiyle buluşturmak değil; **teknolojinin bizzat kendisini "bizim olan" bir bakış açısıyla inşa etme** çabasıdır.
+
+---
+
 Bozkırın zorlu coğrafyası, hayatta kalmayı mutlak bir adaptasyon yeteneğine bağlamıştır. Kadim Türkler, *Canis lupus* türünün sosyal hiyerarşisini, avlanma disiplinini ve çevreyle olan enerji alışverişini gözlemleyerek; bu gözlemleri kendi askeri, sosyolojik ve idari yapılarının çekirdeğine yerleştirmişlerdir. Bu proje, söz konusu tarihsel mirası modern veri bilimi ve simülasyon teknikleriyle yeniden anlamlandırmayı hedefler.
 
 ---

@@ -24,6 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
             "kaynak": "Biyotaklit (Biomimicry)",
             "analiz": "Kurtların dağıtık ama eşgüdümlü hareket yeteneği. AŞİNA diliyle (DİZİLİŞ, ROL) simüle edilen temel mekanik.",
             "kategori": "Yapay Zeka"
+        },
+        {
+            "kavram": "Teknolojik Egemenlik",
+            "kaynak": "AŞİNA Manifestosu",
+            "analiz": "Batı-merkezli teknoloji paradigmasına alternatif bir ontoloji geliştirme çabası. Teknolojiyi kendi kültürümüzle yeniden tanımlamak.",
+            "kategori": "Vizyon ve Strateji"
         }
     ];
 

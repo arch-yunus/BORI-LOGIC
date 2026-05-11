@@ -35,6 +35,18 @@ AŞİNA 2.1, bozkır stratejilerini çok boyutlu bir nizam ile ifade eder:
 | `DİZİLİŞ [Tip]` | Sürü formasyonu (`HİLAL`, `KISKAC`, `KAMA`). |
 | `ZEMİN [Tip]` | Arazi hızı ve gizlilik çarpanı (`BOZKIR`, `ORMAN`, `DAG`). |
 | `ROL [ID] [Tip]` | Birimlere özel yetenek/davranış atar (`ALFA`, `PUSUCU`). |
+
+## 🏔️ Gelecek Vizyonu: AŞİNA 3.0 (Kut ve Tüz)
+
+Batı-merkezli teknoloji anlayışına alternatif olarak, AŞİNA 3.0 sürümüyle birlikte sisteme tamamen özgün kültürel-teknolojik kavramlar entegre edilecektir:
+
+*   **KUT Sistemi**: Bir birimin veya sürünün "meşruiyet" ve "verimlilik" puanı. Sadece hayatta kalmak değil, stratejik başarıyla "Kut" kazanmak, birimlerin kapasitesini artıracaktır.
+*   **TÜZ (Denge Algoritması)**: Global bir dengeleyici olarak, ekosistemdeki kurt ve av oranını, enerji dağılımını ve sistem kararlılığını yöneten bir "Load Balancer" mantığı.
+*   **TOY (Senkronizasyon)**: Birimlerin ortak bir karar almak veya veri paylaşmak için toplandığı "Consensus" protokolü.
+*   **OTAĞ (Master Node)**: Sürünün stratejik koordinasyon merkezi ve veri ambarı.
+
+| Komut | Açıklama |
+| :--- | :--- |
 | `SÜRÜ "[Başlık]"` | Simülasyon bloğunu başlatır ve isimlendirir. |
 | `NİZAM [Param] [Değer]` | Sistem yapılandırmasını (GENİŞLİK, STRATEJİ, HAVA_DURUMU vb.) tanımlar. |
 | `BÖRÜ [n]` | Simülasyondaki aktif kurt (börü) sayısı. |
